@@ -33,6 +33,7 @@ jobs:
         client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
 
     - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
 
     - name: Terraform Init
       run: terraform init
