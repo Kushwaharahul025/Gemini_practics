@@ -7,11 +7,11 @@ terraform {
   }
   backend "azurerm" {
 
-  resource_group_name = "rahulrg"
-  storage_account_name = "rahulstg123"
-  container_name = "hello"
-  key = "new.terraform.tfstate"
-}
+    resource_group_name  = "rahulrg"
+    storage_account_name = "rahulstg123"
+    container_name       = "hello"
+    key                  = "new.terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
